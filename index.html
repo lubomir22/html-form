@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Tell us about your car</h1>
+    <img src="img/auto.png" alt="auto">
+    <h2>Do you have a car?</h2>
+    <form method="POST" action="https://formspree.io/lubomirzahidnyi@gmail.com">
+        <label>
+                    <input type="radio" name="auto" value="yes" checked> Yes<br>
+                    <input type="radio" name="auto" value="no"> No<br>
+                    <input type="radio" name="auto" value="other"> Other
+            </label>
+
+        <h2>Which car are you driving?</h2>
+        <label for="brand-car">Brand of car:</label><br>
+        <input type="text" name="brand-car" id="brand-car" placeholder="BMW"/><br>
+        <label for="model">Model:</label><br>
+        <input type="text" name="model" id="model" required/><br>
+
+        <h2>More details</h2>
+        <label>
+            <ol>
+            <li><h4>Fuel Type</h4></li>
+            </ol>
+              <input type="checkbox" name="type1" value="Petrol" required>Petrol<br>
+              <input type="checkbox" name="type2" value="Diesel">Diesel<br>
+            </label>
+        <label>
+            <ol start="2">
+                <li><h4>Color:</h4></li>
+            </ol>
+            <br>
+            <input type="color" name="favcolor"><br>
+                <select name="menu" size="2" multiple="multiple">
+                <option selected="selected" value="first">Metalic</option>
+                <option value="second">Other</option>
+                </select>
+                <br>
+        </label>
+        <label>
+            <ol start="3">
+                <li><h4>Engine size:</h4></li>
+            </ol>
+            <br>
+            <select name="size">
+                  <option value="1.6">1.6</option>
+                  <option value="1.8">1.8</option>
+                  <option value="2.0">2.0</option>
+                  <option value="2.5">2.5</option>
+            </select>
+            <br>
+        </label>
+        <label>
+            <ol start="4">
+                <li><h4>Year of production(1990-2017):</h4></li>
+            </ol>
+            <input type="range" min="1990" max="2017" step="1" value="2000"> <br>
+        </label>
+        <h3>Curious situation:</h3>
+        <label>
+            <input type="textarea" name="area" 
+            placeholder="Type here... "
+            /><br>
+        </label>
+        <label>
+            <input type="submit" value="Send"/><input type="reset"/>
+            
+        </label>
+    </form>
+
+
+</body>
+
+</html>
